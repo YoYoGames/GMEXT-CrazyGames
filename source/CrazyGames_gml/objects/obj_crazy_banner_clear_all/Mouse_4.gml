@@ -1,2 +1,2 @@
 
-crazy_clear_all_banners()
+crazy_banner_clear_all_banners()

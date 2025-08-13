@@ -1,5 +1,5 @@
 
-crazy_request_ad("rewarded",
+crazy_ad_request_ad("rewarded",
 
 		function(){
 			show_debug_message("AD Started")

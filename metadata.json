@@ -1,0 +1,35 @@
+{
+    "gitHubUrl": "https://github.com/YoYoGames/GMEXT-CrazyGames",
+    "projectFile": "source/Steamworks_gml/CrazyGames.yyp",
+    "projectVersion": "LTS22",
+    "releaseTemplate": "templates/release_body.md",
+    "extensionMetaData": [
+        {
+            "extensionFile": "source/CrazyGames_gml/extensions/crazygames/crazygames.yy",
+            "packageId": "com.yoyogames.crazygamesext",
+            "packageName": "CrazyGames Ext",
+            "packageVersion": "0.0.1",
+            "packageFormat": "LTS22",
+            "includeFolders": null,
+            "includeResources": null,
+            "excludeFolders": null,
+            "excludeResources": null,
+            "postRemovals": [
+                "**/.vs/",
+                "**/.vsc/",
+                "**/*.exp",
+                "**/*.ilk",
+                "**/*.lib",
+                "**/*.pdb",
+                "**/*.exp",
+                "**/*.exe",
+                "**/Debug/",
+                "**/Release/",
+                ".DS_Store",
+                "*.user",
+                "xcuserdata/"
+            ]
+        }
+    ],
+    "documentationFolder": null
+}

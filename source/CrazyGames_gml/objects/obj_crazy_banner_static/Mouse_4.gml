@@ -1,7 +1,7 @@
 
 if(!loaded)
 {
-	crazy_request_static_banner(0,300,250,CRAZYGAMES_BANNER_POSITION.CENTER_MIDDLE,
+	crazy_banner_request_banner(0,300,250,CRAZYGAMES_BANNER_POSITION.CENTER_MIDDLE,
 			function()
 			{
 				show_debug_message("BANNER SUCCESS")
@@ -16,6 +16,6 @@ if(!loaded)
 }
 else
 {
-	crazy_clear_static_banner(0)
+	crazy_banner_clear_banner(0)
 	loaded = false
 }

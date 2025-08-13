@@ -1,2 +1,2 @@
 
-crazy_gameplay_stop()
+crazy_game_gameplay_stop()

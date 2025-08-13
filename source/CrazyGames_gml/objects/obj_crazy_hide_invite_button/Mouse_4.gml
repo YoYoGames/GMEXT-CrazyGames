@@ -1,3 +1,3 @@
 
-crazy_hide_invite_button()
+crazy_game_hide_invite_button()
 

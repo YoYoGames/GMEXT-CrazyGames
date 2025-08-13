@@ -1,2 +1,2 @@
 
-crazy_gameplay_start()
+crazy_game_gameplay_start()

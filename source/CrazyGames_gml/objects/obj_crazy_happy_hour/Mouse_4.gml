@@ -1,2 +1,2 @@
 
-crazy_happytime()
+crazy_game_happytime()

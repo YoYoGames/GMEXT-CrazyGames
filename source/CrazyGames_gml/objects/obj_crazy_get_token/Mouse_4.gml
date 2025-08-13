@@ -1,5 +1,5 @@
 
-crazy_get_user_token(
+crazy_user_get_user_token(
 		function(token)
 		{
 			show_message_async_ext(token)

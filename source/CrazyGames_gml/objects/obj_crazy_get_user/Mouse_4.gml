@@ -1,5 +1,5 @@
 
-crazy_get_user(
+crazy_user_get_user(
 		function(user)
 		{
 			show_message_async_ext(user)

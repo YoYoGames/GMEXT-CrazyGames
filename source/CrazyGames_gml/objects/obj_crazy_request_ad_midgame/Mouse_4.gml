@@ -1,5 +1,5 @@
 
-crazy_request_ad("midgame",
+crazy_ad_request_ad("midgame",
 
 		function(){
 			show_debug_message("AD Started")

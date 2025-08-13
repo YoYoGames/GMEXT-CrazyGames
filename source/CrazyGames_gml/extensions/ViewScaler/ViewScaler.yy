@@ -16,11 +16,9 @@
   "exportToGame":true,
   "extensionVersion":"0.0.1",
   "files":[
-    {"$GMExtensionFile":"","%Name":"ViewScaler.js","constants":[],"copyToTargets":-1,"filename":"ViewScaler.js","final":"","functions":[
+    {"$GMExtensionFile":"v1","%Name":"ViewScaler.js","constants":[],"copyToTargets":32,"filename":"ViewScaler.js","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"view_scaler_resize_canvas","argCount":0,"args":[2,2,1,],"documentation":"/// @param {real} w Requested width size\r\n/// @param {real} h Requested height size\r\n/// @param {function} callback The callback function","externalName":"view_scaler_resize_canvas","help":"view_scaler_resize_canvas(w,h,callback)","hidden":false,"kind":5,"name":"view_scaler_resize_canvas","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
-      ],"init":"","kind":5,"name":"ViewScaler.js","order":[
-        {"name":"view_scaler_resize_canvas","path":"extensions/ViewScaler/ViewScaler.yy",},
-      ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
+      ],"init":"","kind":5,"name":"ViewScaler.js","origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
   ],
   "gradleinject":"",
   "hasConvertedCodeInjection":true,
