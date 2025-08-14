@@ -37,7 +37,7 @@
  * // 1) Get user token (e.g., crazy_user_get_xsolla_user_token) then:
  * // 2) use http_request() calls to:
  * //   * List owned items: GET https://store.xsolla.com/api/v2/project/${project_id}/user/inventory/items
- * //       - Requires Bearer user token.
+ * //       - Requires Bearer user token (_header[? "Authentication"] = "Bearer <token>").
  * //       - Shows items the current user owns.
  * //       - Supports filtering (by SKU, group, type) and pagination (see XSolla docs).
  * //   * List available items: GET https://store.xsolla.com/api/v2/project/{project_id}/items/virtual_items
