@@ -12,7 +12,7 @@
  * 
  * Every time an order has been successfully completed (done), call our analytics module.
  *
- * @param {Struct} order GML structure containing the order details (e.g., product ID, price, currency).
+ * @param {struct} order GML structure containing the order details (e.g., product ID, price, currency).
  *
  * @example
  * ```gml
@@ -28,7 +28,7 @@
  * @desc Opens Xsolla Pay Station (embedded) and forwards ALL widget events to a single GML callback
  * as a `{ type, payload }` object. Call from a direct user gesture (e.g., button click).
  *
- * @param {string} token Xsolla access token (payment token for a specific SKU/order).
+ * @param {string} token Xsolla purchase token (payment token for a specific SKU/order).
  * @param {function} callback Single GML callback receiving `{type, payload}`.
  * @param {struct} options Options to pass to the Xsolla widget ({ sandbox: false, queryParams: {...} })
  * 

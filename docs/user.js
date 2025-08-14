@@ -4,7 +4,7 @@
  * @func crazy_user_is_user_account_available
  * @desc Checks if a user account is available on CrazyGames.
  *
- * @returns {boolean|undefined} `true` if available, `false` if not, or `undefined` if not initialized.
+ * @returns {bool|undefined} `true` if available, `false` if not, or `undefined` if not initialized.
  *
  * @example
  * ```gml

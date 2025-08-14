@@ -5,8 +5,8 @@
  * @desc Requests a static banner ad from the CrazyGames SDK.
  *
  * @param {real} banner_id Unique ID for the banner (0-9).
- * @param {number} w Banner width in pixels.
- * @param {number} h Banner height in pixels.
+ * @param {real} w Banner width in pixels.
+ * @param {real} h Banner height in pixels.
  * @param {constant.CRAZYGAMES_BANNER_POSITION} position Banner position.
  * @param {function} callback_success Called when the banner loads successfully.
  * @param {function} callback_failed Called if the banner fails to load, with error info.
@@ -29,8 +29,8 @@
  * @desc Requests a responsive banner ad from the CrazyGames SDK.
  *
  * @param {real} banner_id Unique ID for the banner (0-9).
- * @param {number} w Reserved width for banner positioning.
- * @param {number} h Reserved height for banner positioning.
+ * @param {real} w Reserved width for banner positioning.
+ * @param {real} h Reserved height for banner positioning.
  * @param {constant.CRAZYGAMES_BANNER_POSITION} position Banner position.
  * @param {function} callback_success Called when the banner loads successfully.
  * @param {function} callback_failed Called if the banner fails to load, with error info.
@@ -65,7 +65,7 @@
  * @func crazy_banner_clear_responsive_banner
  * @desc Clears a responsive banner from the screen and from the CrazyGames SDK.
  *
- * @param {real} banner_id Unique ID of the banner to clear (0-9.
+ * @param {real} banner_id Unique ID of the banner to clear (0-9).
  *
  * @example
  * ```gml

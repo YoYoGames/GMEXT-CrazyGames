@@ -26,8 +26,8 @@
 /**
  * @func crazy_ad_has_ad_block
  * @desc Checks if the user is using an ad blocker.
- * 
- * @returns {boolean}
+ * @param {function} callback_success Called when the results are ready.
+ * @param {function} callback_failed Called if failed to check for ad blocker.
  * 
  * @example
  * ```gml

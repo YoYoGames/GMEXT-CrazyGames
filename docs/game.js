@@ -74,7 +74,7 @@
  * @func crazy_game_is_instant_multiplayer
  * @desc Checks if the game is running in Instant Multiplayer mode.
  * 
- * @returns {boolean}
+ * @returns {bool}
  * 
  * @example
  * ```gml
@@ -89,7 +89,7 @@
  * @func crazy_game_invite_link
  * @desc Creates a multiplayer invite link based on the provided parameters.
  * 
- * @param {Struct} _struct GML structure containing invite link parameters.
+ * @param {struct} _struct GML structure containing invite link parameters.
  * @returns {string|undefined} The generated invite link, or `undefined` if not initialized.
  * 
  * @example

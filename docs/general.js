@@ -40,7 +40,7 @@
  * @func crazy_started
  * @desc Checks whether the CrazyGames SDK has been successfully initialized.
  * 
- * @returns {boolean}
+ * @returns {bool}
  * 
  * @example
  * ```gml
