@@ -2,7 +2,7 @@
 
 /**
  * @func crazy_init
- * @desc This function nitializes the CrazyGames SDK for use within a GameMaker HTML5 export.
+ * @desc This function initializes the CrazyGames SDK for use within a GameMaker HTML5 export.
  * This must be called before using any other CrazyGames functions.
  *
  * @param {function} callback_success Function to execute if initialization succeeds.
