@@ -2,7 +2,7 @@
 
 /**
  * @func crazy_ad_request_ad
- * @desc Requests an advertisement from the CrazyGames SDK.
+ * @desc This function requests an advertisement from the CrazyGames SDK.
  * The ad type can be "midgame" or "rewarded". You can provide callbacks
  * to handle when the ad starts, fails, or finishes.
  *
@@ -25,7 +25,7 @@
 
 /**
  * @func crazy_ad_has_ad_block
- * @desc Checks if the user is using an ad blocker.
+ * @desc This function checks if the user is using an ad blocker.
  * @param {function} callback_success Called when the results are ready.
  * @param {function} callback_failed Called if failed to check for ad blocker.
  * 

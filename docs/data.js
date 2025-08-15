@@ -2,7 +2,7 @@
 
 /**
  * @func crazy_data_clear
- * @desc Clears all stored data for the current user on CrazyGames.
+ * @desc This function clears all stored data for the current user on CrazyGames.
  *
  * @example
  * ```gml
@@ -14,7 +14,7 @@
 
 /**
  * @func crazy_data_get_item
- * @desc Retrieves a stored data item from CrazyGames.
+ * @desc This function retrieves a stored data item from CrazyGames.
  *
  * @param {string} key The key of the data item to retrieve.
  * @returns {any|undefined} The stored value, or `undefined` if not found or not initialized.
@@ -33,11 +33,10 @@
 
 /**
  * @func crazy_data_set_item
- * @desc Stores a data item on CrazyGames.
+ * @desc This function stores a data item on CrazyGames.
  *
  * @param {string} key The key under which to store the value.
  * @param {any} value The value to store.
- * @returns {string} The stored value as a string, or an empty string if null.
  *
  * @example
  * ```gml
@@ -49,7 +48,7 @@
 
 /**
  * @func crazy_data_remove_item
- * @desc Removes a specific data item from CrazyGames storage.
+ * @desc This function removes a specific data item from CrazyGames storage.
  *
  * @param {string} key The key of the data item to remove.
  *
