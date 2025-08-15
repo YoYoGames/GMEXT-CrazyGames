@@ -66,8 +66,8 @@
  *             // Optionally track the order with CrazyGames analytics:
  *             // crazy_analytics_track_order({ order_id: evt.payload?.order_id, status: "done" });
  *             break;
- *         case CRAZY_XSOLLA_EVENT_STATUS_CLOSE:  show_debug_message("IAP close"); break;
- *         case CRAZY_XSOLLA_EVENT_STATUS_ERROR:  show_debug_message("IAP error: " + json_stringify(evt.payload)); break;
+ *         case CRAZY_XSOLLA_EVENT_CLOSE:  show_debug_message("IAP close"); break;
+ *         case CRAZY_XSOLLA_EVENT_ERROR:  show_debug_message("IAP error: " + json_stringify(evt.payload)); break;
  *     }
  * };
  *
