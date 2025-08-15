@@ -92,12 +92,15 @@
  * @member CRAZY_XSOLLA_EVENT_INIT Event on widget initialization
  * @member CRAZY_XSOLLA_EVENT_OPEN Event on opening of the widget
  * @member CRAZY_XSOLLA_EVENT_LOAD Event after payment interface (Pay Station) was loaded
+ * @member CRAZY_XSOLLA_EVENT_CLOSE Event after payment interface (Pay Station) was closed
  * @member CRAZY_XSOLLA_EVENT_STATUS Event when the user was moved on the status page
  * @member CRAZY_XSOLLA_EVENT_STATUS_INVOICE Event when the user was moved on the status page, but the payment is not yet completed
  * @member CRAZY_XSOLLA_EVENT_STATUS_DELIVERING Event when the user was moved on the status page, payment was completed, and Xsolla is sending payment notification
  * @member CRAZY_XSOLLA_EVENT_STATUS_DONE Event when the user was moved on the status page, and the payment was completed successfully
- * @member CRAZY_XSOLLA_EVENT_STATUS_CLOSE Event after payment interface (Pay Station) was closed
- * @member CRAZY_XSOLLA_EVENT_STATUS_ERROR Event when payment flow errors occur
+ * @member CRAZY_XSOLLA_EVENT_STATUS_TROUBLED Event when the user was moved on the status page, but the payment failed
+ * @member CRAZY_XSOLLA_EVENT_USER_COUNTRY Event when Pay Station has determined the user's country
+ * @member CRAZY_XSOLLA_EVENT_FCP Event when fcp occurs in Pay Station
+ * @member CRAZY_XSOLLA_EVENT_ERROR Event when a payment flow error occurs
  * @constant_end
  */
 
