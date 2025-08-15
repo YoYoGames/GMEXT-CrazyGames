@@ -1,7 +1,7 @@
 
 if(!loaded)
 {
-	crazy_banner_request_responsive_banner(0,300,250,CRAZYGAMES_BANNER_POSITION.CENTER_MIDDLE,
+	crazy_banner_request_responsive_banner(0,300,250,CRAZY_BANNER_POSITION.CENTER_MIDDLE,
 			function()
 			{
 				show_debug_message("BANNER SUCCESS")
