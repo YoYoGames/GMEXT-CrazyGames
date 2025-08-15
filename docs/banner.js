@@ -40,7 +40,7 @@
  * crazy_banner_request_responsive_banner(
  *     0,
  *     160, 600,
- *     CRAZYGAMES_BANNER_POSITION.CENTER_MIDDLE,
+ *     CRAZY_BANNER_POSITION.CENTER_MIDDLE,
  *     function() { show_debug_message("Responsive banner loaded!"); },
  *     function(err) { show_debug_message("Responsive banner failed: " + json_stringify(err)); }
  * );
