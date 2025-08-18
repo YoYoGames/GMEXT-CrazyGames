@@ -26,7 +26,7 @@
   "name":"rm_crazy_invitations",
   "parent":{
     "name":"Rooms",
-    "path":"folders/CrazyGames DEMO/Rooms.yy",
+    "path":"folders/CrazyGames Demo/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

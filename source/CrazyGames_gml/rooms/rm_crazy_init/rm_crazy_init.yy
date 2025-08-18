@@ -20,7 +20,7 @@
   "name":"rm_crazy_init",
   "parent":{
     "name":"Rooms",
-    "path":"folders/CrazyGames DEMO/Rooms.yy",
+    "path":"folders/CrazyGames Demo/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

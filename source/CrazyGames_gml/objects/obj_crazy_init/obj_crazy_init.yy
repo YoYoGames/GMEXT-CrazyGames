@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/CrazyGames DEMO/Objects.yy",
+    "path":"folders/CrazyGames Demo/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

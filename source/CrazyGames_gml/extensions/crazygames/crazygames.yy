@@ -76,7 +76,12 @@
   "maclinkerflags":"",
   "macsourcedir":"",
   "name":"crazygames",
-  "options":[],
+  "options":[
+    {"$GMExtensionOption":"","%Name":"versionStable","defaultValue":"2024.14.0.0","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"9c1a0fe1-d7fb-48e1-92bb-968c18727d18","hidden":true,"listItems":[],"name":"versionStable","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionBeta","defaultValue":"2024.1400.0.866","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"29d34446-f4e2-432e-a820-d1f968678bcc","hidden":true,"listItems":[],"name":"versionBeta","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionDev","defaultValue":"9.9.1.1137","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"ad6f8eb5-6c2c-47da-9f22-b2eeda78e58b","hidden":true,"listItems":[],"name":"versionDev","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+    {"$GMExtensionOption":"","%Name":"versionLTS","defaultValue":"2022.0.4.00","description":"","displayName":"","exportToINI":false,"extensionId":null,"guid":"dba80f4c-58a9-4eaa-9146-7a90114aac3d","hidden":true,"listItems":[],"name":"versionLTS","optType":2,"resourceType":"GMExtensionOption","resourceVersion":"2.0",},
+  ],
   "optionsFile":"options.json",
   "packageId":"",
   "parent":{

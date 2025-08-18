@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"show_message_async_ext",
   "parent":{
-    "name":"CrazyGames DEMO",
-    "path":"folders/CrazyGames DEMO.yy",
+    "name":"CrazyGames Demo",
+    "path":"folders/CrazyGames Demo.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
