@@ -3,7 +3,7 @@
 
 /**
  * @func crazy_game_settings
- * @desc Retrieves the game settings object from CrazyGames SDK.
+ * @desc This function retrieves the game settings object from CrazyGames SDK.
  * 
  * @returns {struct}
  * 
@@ -17,7 +17,7 @@
 
 /**
  * @func crazy_game_gameplay_start
- * @desc Signals the CrazyGames SDK that gameplay has started.
+ * @desc This function signals the CrazyGames SDK that gameplay has started.
  * 
  * @example
  * ```gml
@@ -28,7 +28,7 @@
 
 /**
  * @func crazy_game_gameplay_stop
- * @desc Signals the CrazyGames SDK that gameplay has stopped.
+ * @desc This function signals the CrazyGames SDK that gameplay has stopped.
  * 
  * @example
  * ```gml
@@ -39,7 +39,7 @@
 
 /**
  * @func crazy_game_loading_start
- * @desc Signals the CrazyGames SDK that game loading has started.
+ * @desc This function signals the CrazyGames SDK that game loading has started.
  * 
  * @example
  * ```gml
@@ -50,7 +50,7 @@
 
 /**
  * @func crazy_game_loading_stop
- * @desc Signals the CrazyGames SDK that game loading has finished.
+ * @desc This function signals the CrazyGames SDK that game loading has finished.
  * 
  * @example
  * ```gml
@@ -61,7 +61,7 @@
 
 /**
  * @func crazy_game_happytime
- * @desc Triggers CrazyGames' "happy time" event, indicating a positive gameplay moment. Can be called on various player achievements (beating a boss, reaching a highscore, etc.). It makes the website celebrate (for example by launching some confetti). There is no need to call this when a level is completed, or an item is obtained.
+ * @desc This function triggers CrazyGames' "happy time" event, indicating a positive gameplay moment. Can be called on various player achievements (beating a boss, reaching a highscore, etc.). It makes the website celebrate (for example by launching some confetti). There is no need to call this when a level is completed, or an item is obtained.
  * 
  * @example
  * ```gml
@@ -72,7 +72,7 @@
 
 /**
  * @func crazy_game_is_instant_multiplayer
- * @desc Checks if the game is running in Instant Multiplayer mode.
+ * @desc This function checks if the game is running in Instant Multiplayer mode.
  * 
  * @returns {bool}
  * 
@@ -87,10 +87,10 @@
 
 /**
  * @func crazy_game_invite_link
- * @desc Creates a multiplayer invite link based on the provided parameters.
+ * @desc This function creates a multiplayer invite link based on the provided parameters.
  * 
  * @param {struct} _struct GML structure containing invite link parameters.
- * @returns {string|undefined} The generated invite link, or `undefined` if not initialized.
+ * @returns {string|undefined} The generated invite link, or `undefined` if not initialised.
  * 
  * @example
  * ```gml
@@ -103,10 +103,10 @@
 
 /**
  * @func crazy_game_get_invite_param
- * @desc Retrieves a specific invite parameter from the CrazyGames SDK.
+ * @desc This function retrieves a specific invite parameter from the CrazyGames SDK.
  * 
  * @param {string} key The parameter key to retrieve.
- * @returns {string|undefined} The parameter value, or `undefined` if not initialized.
+ * @returns {string|undefined} The parameter value, or `undefined` if not initialised.
  * 
  * @example
  * ```gml
@@ -122,7 +122,7 @@
  * @func crazy_game_show_invite_button
  * @desc This feature allows you to display a button in the game footer, that opens a popup containing the invite link.
  * 
- * [[WARNING: The invite button should only be used to invite players to a multiplayer gaming session. Please avoid using it for other use cases, such as a Share button for example, as this may lead to delayed submission check or even game rejection.]]
+ * [[WARNING: The invite button should only be used to invite players to a multiplayer gaming session. Please avoid using it for other use cases, such as a Share button for example, as this may lead to a delayed submission check or even game rejection.]]
  * 
  * @param {struct} params GML structure defining link parameters.
  * 
@@ -143,7 +143,7 @@
 
 /**
  * @func crazy_game_hide_invite_button
- * @desc Hides the CrazyGames multiplayer invite button.
+ * @desc This function hides the CrazyGames multiplayer invite button.
  * 
  * @example
  * ```gml

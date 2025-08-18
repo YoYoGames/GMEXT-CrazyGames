@@ -2,8 +2,8 @@
 
 /**
  * @func crazy_init
- * @desc Initializes the CrazyGames SDK for use within a GameMaker HTML5 export.
- * Must be called before using any other CrazyGames functions.
+ * @desc This function initializes the CrazyGames SDK for use within a GameMaker HTML5 export.
+ * This must be called before using any other CrazyGames functions.
  *
  * @param {function} callback_success Function to execute if initialization succeeds.
  * @param {function} callback_failed Function to execute if initialization fails, receiving the error as a parameter.
@@ -20,7 +20,7 @@
 
 /**
  * @func crazy_get_environment
- * @desc Retrieves the current environment information from the CrazyGames SDK.
+ * @desc This function retrieves the current environment information from the CrazyGames SDK.
  * This may include values such as "local" or "crazygames".
  * 
  * @returns {string}
@@ -38,7 +38,7 @@
 
 /**
  * @func crazy_started
- * @desc Checks whether the CrazyGames SDK has been successfully initialized.
+ * @desc This function checks whether the CrazyGames SDK has been successfully initialized.
  * 
  * @returns {bool}
  * 
@@ -57,7 +57,7 @@
 /**
  * @module general
  * @title General
- * @desc These module provides general purpose CrazyGames SDK functions.
+ * @desc This module provides general purpose CrazyGames SDK functions.
  * 
  * [[NOTE: Make sure to call ${func.crazy_init} before stating to use the extension.]]
  * 

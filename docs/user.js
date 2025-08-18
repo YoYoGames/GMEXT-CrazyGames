@@ -2,7 +2,7 @@
 
 /**
  * @func crazy_user_is_user_account_available
- * @desc Checks if a user account is available on CrazyGames.
+ * @desc This function checks if a user account is available on CrazyGames.
  *
  * @returns {bool|undefined} `true` if available, `false` if not, or `undefined` if not initialized.
  *
@@ -19,7 +19,7 @@
 
 /**
  * @func crazy_user_get_user
- * @desc Retrieves the currently logged-in user from CrazyGames.
+ * @desc This function retrieves the currently logged-in user from CrazyGames.
  *
  * @param {function} callback_success Called with the user data on success.
  * @param {function} callback_failed Called with an error object on failure.
@@ -36,7 +36,7 @@
 
 /**
  * @func crazy_user_get_user_system_info
- * @desc Retrieves system information about the current user.
+ * @desc This function retrieves system information about the current user.
  *
  * @returns {struct} GML structure containing user system information, or `undefined` if not initialized.
  *
@@ -50,7 +50,7 @@
 
 /**
  * @func crazy_user_get_user_token
- * @desc Retrieves the CrazyGames user token for authentication.
+ * @desc This function retrieves the CrazyGames user token for authentication.
  *
  * @param {function} callback_success Called with the token string on success.
  * @param {function} callback_failed Called with an error object on failure.
@@ -68,7 +68,7 @@
 
 /**
  * @func crazy_user_show_auth_prompt
- * @desc Shows the CrazyGames authentication prompt for the user to log in or sign up.
+ * @desc This function shows the CrazyGames authentication prompt for the user to log in or sign up.
  *
  * @param {function} callback_success Called with the user data if login is successful.
  * @param {function} callback_failed Called with an error object on failure.
@@ -86,7 +86,7 @@
 
 /**
  * @func crazy_user_add_auth_listener
- * @desc Adds a listener to detect user authentication changes.
+ * @desc This function adds a listener to detect user authentication changes.
  *
  * @param {function} callback Called whenever the user's authentication status changes.
  *
@@ -102,7 +102,7 @@
 
 /**
  * @func crazy_user_remove_auth_listener
- * @desc Removes the current authentication listener, if one exists.
+ * @desc This function removes the current authentication listener, if one exists.
  *
  * @example
  * ```gml
@@ -114,7 +114,7 @@
 
 /**
  * @func crazy_user_show_account_link_prompt
- * @desc Shows the CrazyGames account link prompt to connect accounts.
+ * @desc This function shows the CrazyGames account link prompt to connect accounts.
  *
  * @param {function} callback_success - Called with the link response on success.
  * @param {function} callback_failed - Called with an error object on failure.
@@ -131,7 +131,7 @@
 
 /**
  * @func crazy_user_get_xsolla_user_token
- * @desc Retrieves the Xsolla user token from CrazyGames for in-game purchases.
+ * @desc This function retrieves the Xsolla user token from CrazyGames for in-game purchases.
  * This token is used to authenticate the user with Xsolla's payment services.
  *
  * @param {function} callback_success Called with the token string on success.
