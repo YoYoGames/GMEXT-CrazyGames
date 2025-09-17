@@ -14,7 +14,7 @@
   "copyToTargets":32,
   "description":"",
   "exportToGame":true,
-  "extensionVersion":"0.0.1",
+  "extensionVersion":"0.1.0",
   "files":[
     {"$GMExtensionFile":"v1","%Name":"","constants":[],"copyToTargets":32,"filename":"crazygames.js","final":"","functions":[
         {"$GMExtensionFunction":"","%Name":"crazy_init","argCount":0,"args":[1,1,],"documentation":"/// @desc Initializes the CrazyGames SDK for use within a GameMaker HTML5 export.\r\n/// Must be called before using any other CrazyGames functions.\r\n/// @param {function} callback_success Function to execute if initialization succeeds.\r\n/// @param {function} callback_failed Function to execute if initialization fails, receiving the error as a parameter.","externalName":"crazy_init","help":"crazy_init(callback_success,callback_failed)","hidden":false,"kind":5,"name":"crazy_init","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":1,},
