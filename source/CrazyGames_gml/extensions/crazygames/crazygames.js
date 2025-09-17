@@ -127,9 +127,11 @@ function crazy_game_is_instant_multiplayer() {
 	return window.CrazyGames.SDK.game.isInstantMultiplayer;
 }
 
-function crazy_game_invite_link(_struct) {
+function crazy_game_invite_link(_json) {
 	if(!__gmext_crazy_games.initialized) return;
-	return window.CrazyGames.SDK.game.inviteLink(__gmext_crazy_games.gml_to_js_value(_struct));
+
+	const data = JSON.parse(_json);
+	return window.CrazyGames.SDK.game.inviteLink(data);
 }
 
 function crazy_game_get_invite_param(key) {
@@ -137,11 +139,11 @@ function crazy_game_get_invite_param(key) {
 	return window.CrazyGames.SDK.game.getInviteParam(key) ?? undefined;
 }
 
-function crazy_game_show_invite_button(_struct) {
+function crazy_game_show_invite_button(_json) {
 	if(!__gmext_crazy_games.initialized) return;
-	const link = window.CrazyGames.SDK.game.showInviteButton(__gmext_crazy_games.gml_to_js_value(_struct));
-	
-	return link;
+
+	const data = JSON.parse(_json);
+	return window.CrazyGames.SDK.game.showInviteButton(data);
 }
 
 function crazy_game_hide_invite_button() {
@@ -335,13 +337,16 @@ function crazy_user_get_xsolla_user_token(callback_success,callback_failed) {
 }
 
 function crazy_analytics_track_order(order) {
-	return window.CrazyGames.SDK.analytics.trackOrder("xsolla", __gmext_crazy_games.gml_to_js_value(order));
+	if(!__gmext_crazy_games.initialized) return;
+
+	const data = JSON.parse(order);
+	return window.CrazyGames.SDK.analytics.trackOrder("xsolla", data);
 }
 
-function crazy_xsolla_open_paystation(token, callback, options = {}) {
+function crazy_xsolla_open_paystation(token, callback, options_json = "{}") {
 	if (!__gmext_crazy_games.initialized) return;
 
-	const { sandbox = false, queryParams = {} } = options;
+	const { sandbox = false, queryParams = {} } = JSON.parse(options_json);
 
 	// Helper: send {type, payload} to GML
 	const emit = (type, payload) => {
