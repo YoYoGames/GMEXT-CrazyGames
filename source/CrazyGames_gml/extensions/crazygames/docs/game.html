@@ -286,7 +286,7 @@ show_debug_message("Game settings: " + json_stringify(settings));</code></pre>
 <p><br></p>
 <p><strong>Syntax:</strong></p>
 <blockquote>
-<pre class="highlight"><code class="language-gml">crazy_game_invite_link(_struct)</code></pre>
+<pre class="highlight"><code class="language-gml">crazy_game_invite_link(_params)</code></pre>
 </blockquote>
 <table>
 <thead>
@@ -298,9 +298,9 @@ show_debug_message("Game settings: " + json_stringify(settings));</code></pre>
 </thead>
 <tbody>
 <tr>
-<td>_struct</td>
-<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Overview/Structs.htm">Struct</a></td>
-<td>GML structure containing invite link parameters.</td>
+<td>_params</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>A JSON-formatted string containing invite link parameters.</td>
 </tr>
 </tbody>
 </table>
@@ -315,7 +315,7 @@ show_debug_message("Game settings: " + json_stringify(settings));</code></pre>
 <p><br></p>
 <p><strong>Example:</strong></p>
 <pre class="highlight"><code class="language-gml">var inviteParams = { roomId: 12345 };
-var link = crazy_game_invite_link(inviteParams);
+var link = crazy_game_invite_link(json_stringify(inviteParams));
 show_debug_message("Invite link: " + link);</code></pre>
 <p><br></p>
 <p><br></p>
@@ -386,8 +386,8 @@ if (roomCode != undefined) {
 <tbody>
 <tr>
 <td>params</td>
-<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Overview/Structs.htm">Struct</a></td>
-<td>GML structure defining link parameters.</td>
+<td><a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Strings/Strings.htm">String</a></td>
+<td>A JSON-formatted string defining link parameters.</td>
 </tr>
 </tbody>
 </table>
@@ -402,11 +402,12 @@ if (roomCode != undefined) {
 <p><strong>Example:</strong></p>
 <pre class="highlight"><code class="language-gml">// the returned link looks the same as the link
 // returned by the crazy_game_invite_link method
-var link = crazy_game_show_invite_button({
-     roomId: 12345,
-     param2: "value",
-     param3: "value",
-});</code></pre>
+var link_params = {
+    roomId: 12345,
+    param2: "value",
+    param3: "value",
+};
+var link = crazy_game_show_invite_button(json_stringify(link_params));</code></pre>
 <p><br></p>
 <p><br></p>
 <hr />
