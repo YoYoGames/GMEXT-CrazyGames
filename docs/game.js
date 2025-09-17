@@ -89,13 +89,13 @@
  * @func crazy_game_invite_link
  * @desc This function creates a multiplayer invite link based on the provided parameters.
  * 
- * @param {struct} _struct GML structure containing invite link parameters.
+ * @param {string} _params A JSON-formatted string containing invite link parameters.
  * @returns {string|undefined} The generated invite link, or `undefined` if not initialised.
  * 
  * @example
  * ```gml
  * var inviteParams = { roomId: 12345 };
- * var link = crazy_game_invite_link(inviteParams);
+ * var link = crazy_game_invite_link(json_stringify(inviteParams));
  * show_debug_message("Invite link: " + link);
  * ```
  * @func_end
@@ -124,7 +124,7 @@
  * 
  * [[WARNING: The invite button should only be used to invite players to a multiplayer gaming session. Please avoid using it for other use cases, such as a Share button for example, as this may lead to a delayed submission check or even game rejection.]]
  * 
- * @param {struct} params GML structure defining link parameters.
+ * @param {string} params A JSON-formatted string defining link parameters.
  * 
  * @returns {string}
  * 
@@ -132,11 +132,12 @@
  * ```gml
  * // the returned link looks the same as the link
  * // returned by the crazy_game_invite_link method
- * var link = crazy_game_show_invite_button({
- *      roomId: 12345,
- *      param2: "value",
- *      param3: "value",
- * });
+ * var link_params = {
+ *     roomId: 12345,
+ *     param2: "value",
+ *     param3: "value",
+ * };
+ * var link = crazy_game_show_invite_button(json_stringify(link_params));
  * ```
  * @func_end
  */

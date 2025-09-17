@@ -12,13 +12,13 @@
  * 
  * Every time an order has been successfully completed (done), call our analytics module.
  *
- * @param {struct} order GML structure containing the order details (e.g., product ID, price, currency).
+ * @param {string} order JSON-formatted string containing the order details (e.g., product ID, price, currency).
  *
  * @example
  * ```gml
  * // comes from the xsolla purchase
  * var orderData = {};
- * crazy_analytics_track_order(orderData);
+ * crazy_analytics_track_order(json_stringify(orderData));
  * show_debug_message("Purchase order tracked in CrazyGames analytics.");
  * ```
  * @func_end
@@ -34,7 +34,7 @@
  *
  * @param {string} token Xsolla purchase token (payment token for a specific SKU/order).
  * @param {function} callback Single GML callback function receiving `{type, payload}`.
- * @param {struct} options A struct containing options to pass to the Xsolla widget ({ sandbox: false, queryParams: {...} })
+ * @param {string} options A JSON-formatted string containing the options to pass to the Xsolla widget ("{ sandbox: false, queryParams: {...} }")
  * 
  * @example
  * ```gml
@@ -64,14 +64,16 @@
  *         case CRAZY_XSOLLA_EVENT_STATUS_DONE:
  *             show_debug_message("IAP done: " + json_stringify(evt.payload));
  *             // Optionally track the order with CrazyGames analytics:
- *             // crazy_analytics_track_order({ order_id: evt.payload?.order_id, status: "done" });
+ *             // var orderData = { order_id: evt.payload?.order_id, status: "done" };
+ *             // crazy_analytics_track_order(json_stringify(orderData));
  *             break;
  *         case CRAZY_XSOLLA_EVENT_CLOSE:  show_debug_message("IAP close"); break;
  *         case CRAZY_XSOLLA_EVENT_ERROR:  show_debug_message("IAP error: " + json_stringify(evt.payload)); break;
  *     }
  * };
- *
- * crazy_xsolla_open_paystation(global.xsolla_token, cb, { sandbox: true });
+ * 
+ * var options = { sandbox: true };
+ * crazy_xsolla_open_paystation(global.xsolla_token, cb, json_stringify(options));
  * ```
  * @function_end
  */
